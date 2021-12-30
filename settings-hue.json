@@ -4,7 +4,7 @@
     { "solid-hue": "urn:solid-hue:default:" }
   ],
   "import": [
-    "files-sh:config/config-hue.json"
+    "files-sh:config/config-et.json"
   ],
   "@graph": [
     

@@ -8,7 +8,7 @@
       "route": "^/register/$",
       "viewTemplates": {
         "BasicInteractionRoute:_viewTemplates_key": "text/html",
-        "BasicInteractionRoute:_viewTemplates_value": "@css:easy_token/templates/register-easy-token.html.ejs"
+        "BasicInteractionRoute:_viewTemplates_value": "./easy_token/templates/register-easy-token.html.ejs"
 
       },
       "responseTemplates": {
