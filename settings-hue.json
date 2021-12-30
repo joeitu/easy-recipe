@@ -1,0 +1,13 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/components/context.jsonld",
+    { "solid-hue": "urn:solid-hue:default:" }
+  ],
+  "import": [
+    "files-sh:config/config-hue.json"
+  ],
+  "@graph": [
+    
+    
+  ]
+}
