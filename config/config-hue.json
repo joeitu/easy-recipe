@@ -9,7 +9,7 @@
   ],
   "import": [
 
-    "files-sh:config/identity/ownership/token.json",
+    "files-sh:easy_token/token.json",
 
     "files-scs:config/app/main/default.json",
     "files-scs:config/app/init/initialize-prefilled-root.json",
