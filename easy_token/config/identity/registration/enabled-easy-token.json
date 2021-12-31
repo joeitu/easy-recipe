@@ -1,10 +1,10 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/context.jsonld",
+    "https://example.jkl/easy-token/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^2.0.0/components/context.jsonld"
   ],
   "import": [
-    "files-sh:easy_token/config/identity/registration/route/registration-easy-token.json"
+    "files-et:easy_token/config/identity/registration/route/registration-easy-token.json"
   ],
   "@graph": [
     {

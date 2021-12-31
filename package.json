@@ -24,19 +24,19 @@
   ],
 
 
-  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/easy-token",
+  "lsd:module": "https://example.jkl/easy-token",
 
   "lsd:components": "easy_token/components/components.jsonld",
 
   "lsd:contexts": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/context.jsonld": "easy_token/components/context.jsonld"
+    "https://example.jkl/easy-token/^1.0.0/components/context.jsonld": "easy_token/components/context.jsonld"
   },
 
   "lsd:importPaths": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/": "easy_token/components/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/config/": "easy_token/config/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/easy_token/": "easy_token/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/dist/": "easy_token/dist/"
+    "https://example.jkl/easy-token/^1.0.0/components/": "easy_token/components/",
+    "https://example.jkl/easy-token/^1.0.0/config/": "easy_token/config/",
+    "https://example.jkl/easy-token/^1.0.0/easy_token/": "easy_token/",
+    "https://example.jkl/easy-token/^1.0.0/dist/": "easy_token/dist/"
   },
 
 

@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/context.jsonld",
+    "https://example.jkl/easy-token/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^2.0.0/components/context.jsonld",
     {
       "easy-token": "urn:easy-token:default:",
@@ -11,8 +11,8 @@
 
   "import": [
 
-    "files-sh:easy_token/config/identity/registration/enabled-easy-token.json",
-    "files-sh:easy_token/config/http/static/default.json",
+    "files-et:easy_token/config/identity/registration/enabled-easy-token.json",
+    "files-et:easy_token/config/http/static/default.json",
 
     "files-scs:config/identity/ownership/token.json",
 
