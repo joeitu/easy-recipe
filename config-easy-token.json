@@ -2,11 +2,6 @@
   "@context": [
     "https://example.jkl/easy-token/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^2.0.0/components/context.jsonld",
-    {
-      "easy-token": "urn:easy-token:default:",
-      "solid-server": "urn:solid-server:default:"
-    }
-
   ],
 
   "import": [
@@ -46,8 +41,5 @@
     "files-scs:config/util/index/default.json"
 
 
-  ],
-  "@graph": [
-    
   ]
 }
