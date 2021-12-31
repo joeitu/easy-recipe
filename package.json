@@ -5,8 +5,6 @@
 
   "lsd:module": "https://example.jkl/easy-token",
 
-  "lsd:components": "easy_token/components/components.jsonld",
-
   "lsd:contexts": {
     "https://example.jkl/easy-token/^1.0.0/components/context.jsonld": "easy_token/components/context.jsonld"
   },
@@ -14,18 +12,15 @@
   "lsd:importPaths": {
     "https://example.jkl/easy-token/^1.0.0/components/": "easy_token/components/",
     "https://example.jkl/easy-token/^1.0.0/config/": "easy_token/config/",
-    "https://example.jkl/easy-token/^1.0.0/easy_token/": "easy_token/",
-    "https://example.jkl/easy-token/^1.0.0/dist/": "easy_token/dist/"
+    "https://example.jkl/easy-token/^1.0.0/easy_token/": "easy_token/"
   },
 
 
   "scripts": {
-    "build": "npm run build:ts && npm run build:components",
-    "build:components": "componentsjs-generator -s src -c dist/components -i .componentsignore",
-    "build:ts": "tsc",
     "lint": "eslint . --cache",
-    "prepare": "npm run build"
+    "start": "npx community-solid-server -c config-easy-token.json"
   },
+
   "dependencies": {
     "@solid/community-server": "2.0.1",
     "penny-pod-inspector": "^0.408340065.1779949331",

@@ -1,8 +1,0 @@
-{
-  "@context": [
-    "https://example.jkl/easy-token/^1.0.0/components/context.jsonld"
-  ],
-  "@id": "ex:easy-token",
-  "@type": "Module",
-  "requireName": "easy-token"
-}
