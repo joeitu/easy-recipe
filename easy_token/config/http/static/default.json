@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^2.0.0/components/context.jsonld"
   ],
   "@graph": [

@@ -1,5 +1,5 @@
 {
-  "name": "solid-hue",
+  "name": "easy-token",
   "version": "1.0.2",
   "description": "A Community Solid Server backend for Philips Hue",
   "keywords": [
@@ -24,24 +24,23 @@
   ],
 
 
-  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue",
+  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/easy-token",
 
-  "lsd:components": "dist/components/components.jsonld",
+  "lsd:components": "easy_token/components/components.jsonld",
 
   "lsd:contexts": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/components/context.jsonld": "dist/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/context.jsonld": "easy_token/components/context.jsonld"
   },
 
   "lsd:importPaths": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/components/": "dist/components/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/config/": "config/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/easy_token/": "easy_token/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/dist/": "dist/"
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/": "easy_token/components/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/config/": "easy_token/config/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/easy_token/": "easy_token/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/dist/": "easy_token/dist/"
   },
 
 
   "scripts": {
-    "w": "which componentsjs-generator",
     "build": "npm run build:ts && npm run build:components",
     "build:components": "componentsjs-generator -s src -c dist/components -i .componentsignore",
     "build:ts": "tsc",

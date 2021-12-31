@@ -1,0 +1,8 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/easy-token/^1.0.0/components/context.jsonld"
+  ],
+  "@id": "npmd:easy-token",
+  "@type": "Module",
+  "requireName": "easy-token"
+}

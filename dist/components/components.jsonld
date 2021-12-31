@@ -1,8 +1,0 @@
-{
-  "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/components/context.jsonld"
-  ],
-  "@id": "npmd:solid-hue",
-  "@type": "Module",
-  "requireName": "solid-hue"
-}
