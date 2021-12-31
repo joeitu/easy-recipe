@@ -1,6 +1,5 @@
 {
   "@context": [
-    "https://example.jkl/easy-token/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^2.0.0/components/context.jsonld"
   ],
   "@graph": [
