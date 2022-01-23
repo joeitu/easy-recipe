@@ -20,8 +20,7 @@
     "@inrupt/solid-client": "^1.14.0",
     "@inrupt/solid-client-authn-browser": "^1.11.2",
     "@inrupt/vocab-common-rdf": "^1.0.3",
-    "@solid/community-server": "2.0.1",
-    "buffer": "^6.0.3"
+    "@solid/community-server": "2.0.1"
   },
   "devDependencies": {
     "webpack": "^5.61.0",
