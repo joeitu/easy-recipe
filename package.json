@@ -14,13 +14,16 @@
   "scripts": {
     "build": "npm ci",
     "build-scripts": "webpack --config=webpack.config.prod.js",
-    "start": "mkdir -p data; npx community-solid-server -c config-easy-token.json -f data"
+    "start": "mkdir -p data; npx community-solid-server -c config-easy-token.json -f data",
+    "start-penny": "mkdir -p data; npx community-solid-server -c config-penny-easy-token.json -f data"
   },
   "dependencies": {
     "@inrupt/solid-client": "^1.14.0",
     "@inrupt/solid-client-authn-browser": "^1.11.2",
     "@inrupt/vocab-common-rdf": "^1.0.3",
-    "@solid/community-server": "2.0.1"
+    "@solid/community-server": "2.0.1",
+    "buffer": "^6.0.3",
+    "penny-pod-inspector": "^0.408340065.1779949331"
   },
   "devDependencies": {
     "webpack": "^5.61.0",
