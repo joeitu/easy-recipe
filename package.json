@@ -14,8 +14,8 @@
   "scripts": {
     "build": "npm ci",
     "build-scripts": "webpack --config=webpack.config.prod.js",
-    "start": "mkdir -p data; npx community-solid-server -c config-easy-token.json -f data",
-    "start-penny": "mkdir -p data; npx community-solid-server -c config-penny-easy-token.json -f data"
+    "start": "npx community-solid-server -c config-easy-token.json",
+    "start-penny": "npx community-solid-server -c config-penny-easy-token.json"
   },
   "dependencies": {
     "@inrupt/solid-client": "^1.14.0",
