@@ -32,11 +32,12 @@
       <ol id="existingWebIdForm">
         <li>
         </li>
-    Enter your WebID document host:
-      <input type="text" id="oidcIssuer" value="http://localhost:3003"></input>
+    Enter your WebID document host ( change the value if your WebID is not hosted at solidcommunity.net):
+      <input type="text" id="oidcIssuer" value="https://solidcommunity.net"></input>
       <br/>
-           Or your existing WebID: (not working yet)
-          <input id="webId" type="text" name="webId" value="<%= prefilled.webId || '' %>">
+           <!-- Or your existing WebID: (not working yet)
+          <input id="webId" type="text" name="webId" value="<%= prefilled.webId || '' %>"> -->
+          <span id="webIdCheck"></span>
     <button type="button"  id="prooveWebID">Verify my WebID</button>
 
         <li class="checkbox">
@@ -131,7 +132,9 @@
       let webIdUrl = session.info.webId;
       console.log("web id = " + webIdUrl)
       console.log(`Logged in with WebID ${session.info.webId}`)
-      document.getElementById("webId").value = `${session.info.webId}`
+//      document.getElementById("webId").value = `${session.info.webId}`
+      document.getElementById("webIdCheck").textContent = `Using you webId: ${session.info.webId}`
+
       console.log("2.b fetch token");
       const form_data = get_form_data();
       const register_url = window.location.origin + '/idp/register/'
