@@ -18,7 +18,7 @@ async function fetch_token(form_data, idp_url) {
 
 
 function get_form_data() {
-  const webId = document.getElementById("webId").value;
+  const webId = document.getElementById("webIdValue").value;
   // send fake data as we just need a failed login to get the token
   // only the webID should be correct, other return wrong token
   data = {"email": "a@a.a",
@@ -27,7 +27,8 @@ function get_form_data() {
            "podName": "a",
            "register": "on",
            "createPod": "on",
-           "webId": webId           }
+           "webId": webId
+  }
   return data
 }
 

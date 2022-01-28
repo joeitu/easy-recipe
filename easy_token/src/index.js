@@ -64,6 +64,7 @@ async function addToken(token_value, webIdUrl) {
 
 
 export async function check_if_token_in_webid_document(pod_url, token){
+  // WIP... verify if token dully added to webID document
   // from https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-data/
 
   const myDataset = await getSolidDataset(
@@ -106,7 +107,9 @@ export async function afterLoginHook(func, args=[]) {
   }else{
     console.log("afterLoginHook: NOT logged in")
   }
-}export function get_issuer_and_login () {
+}
+
+export function get_issuer_and_login () {
   let oidcIssuer = document.getElementById('oidcIssuer').value
   startLogin(oidcIssuer);
 }
