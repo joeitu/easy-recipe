@@ -32,16 +32,45 @@
       <ol id="existingWebIdForm">
         <li>
         </li>
-    Enter your WebID document host ( change the value if your WebID is not hosted at solidcommunity.net):
-      <input type="text" id="oidcIssuer" value="https://solidcommunity.net"></input>
+
+        <style>
+        .dropdown {
+          position: relative;
+          width: 400px;
+        }
+        .dropdown select {
+          width: 100%;
+        }
+        .dropdown > * {
+          box-sizing: border-box;
+          height: 1.5em;
+        }
+        .dropdown input {
+          position: absolute;
+          width: calc(100% - 20px);
+        }
+        </style>
+         
+      Enter your WebID host :
+        <!-- <input type="text" id="oidcIssuer" value="https://solidcommunity.net"></input> -->
+
+        <div class="dropdown">
+          <input id='oidcIssuer' type="text" value="https://solidcommunity.net"  />
+          <select id='b' onchange="this.previousElementSibling.value=this.value; this.previousElementSibling.focus()">
+            <option>https://solidcommunity.net</option>
+            <option>https://inrupt.net</option>
+            <option>https://broker.pod.inrupt.com</option>
+            <option>https://solidweb.org</option>
+            <option>https://solidweb.me</option>
+          </select>
+        </div>
+
       <br/>
            <!-- Or your existing WebID: (not working yet)
           <input id="webId" type="text" name="webId" value="<%= prefilled.webId || '' %>"> -->
+          <button type="button"  id="prooveWebID">Verify my WebID</button><br/>
           <span id="webIdDesc"></span>
           <input id="webIdValue" style="visibility:hidden" type="text" name="webId" value="">
-
-
-    <button type="button"  id="prooveWebID">Verify my WebID</button>
 
         <li class="checkbox">
           <label>
@@ -135,7 +164,12 @@
       let webIdUrl = session.info.webId;
       console.log("web id = " + webIdUrl)
       console.log(`Logged in with WebID ${session.info.webId}`)
-      document.getElementById("webIdDesc").textContent = `Using you webId:`
+      document.getElementById("webIdDesc").textContent = `Using the following WebID:`
+      document.getElementById("prooveWebID").disabled = true;
+      // document.getElementById("prooveWebID").style.backgroundColor = "var(--solid-gray)";
+      document.getElementById("prooveWebID").style.transition = "background 0.5s ease-in-out";
+      document.getElementById("prooveWebID").style.backgroundColor = "green";
+      document.getElementById("prooveWebID").textContent = "🗸 Verified";
       document.getElementById("webIdValue").style.visibility = "visible"
       document.getElementById("webIdValue").value = `${session.info.webId}`
 
