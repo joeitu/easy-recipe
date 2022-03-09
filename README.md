@@ -22,7 +22,7 @@ When creating a new Pod with an existing WebID, CSS would ask the user to prove 
 
 The proposed solution is to automate the former steps with a simple button. The steps to verify the WebID are the following:
  1. click the "Proove that I own this webId" button
- 1. login to your OIDC issuer
+ 1. login to your IDP
 The script will do the rest.
 
 ## Screenshot
@@ -51,7 +51,7 @@ Enter your WebID host and click the *Verify my WebID* button. You should be redi
 ## TODO's
  - [ ] Clean and refactore code
     - [ ] Simplify config import
- - [ ] Add a function that check that the verification toekn is correclty added to the webId document
+ - [ ] Add a function that check that the verification toekn is correclty added to the WebID document
     - [ ] Display an error or validation message
  - [ ] Don't fail quietly, display error message to the user 
  - [ ] remove oidcIssuerRegistrationToken after registration
